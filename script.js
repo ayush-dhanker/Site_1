@@ -19,12 +19,6 @@ let seconds = 0,
   nifty_P_L = 0,
   bank_P_L = 0;
 
-//function for changing the color of button when clicked
-function swapButton() {
-  niftyEl.classList.toggle("swap-button");
-  bank_NiftyEl.classList.toggle("swap-button");
-}
-
 //function for displaying amounts
 function displayAmount() {
   seconds++;
@@ -60,13 +54,19 @@ function modalWindow() {
 
 //adding event to nifty button
 niftyEl.addEventListener("click", function () {
-  swapButton();
+  // changing the color of button when clicked
+  niftyEl.classList.add("swap-button");
+  bank_NiftyEl.classList.remove("swap-button");
+  //event for hiding table content
   row_1.classList.add("hidden");
   row_2.classList.add("hidden");
 });
 //adding event to BankNifty Button
 bank_NiftyEl.addEventListener("click", function () {
-  swapButton();
+  // changing the color of button when clicked
+  niftyEl.classList.remove("swap-button");
+  bank_NiftyEl.classList.add("swap-button");
+  //event for showing table content
   row_1.classList.remove("hidden");
   row_2.classList.remove("hidden");
 });
