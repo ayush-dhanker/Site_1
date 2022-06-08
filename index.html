@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churnning</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Macondo&family=Montserrat:ital,wght@0,600;1,400&family=Open+Sans&family=Pacifico&family=Rubik:wght@500&family=Tiro+Kannada:ital@1&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <section id="layer-1">
+      <div class="box"><p>TOTAL PROFIT & LOSS <br><span class="amount"
+            id="total_P&L">₹
+            0.00</span></p><img
+          src="images.png" alt="graph"></div>
+      <div class="box"><p>NIFTY PROFIT & LOSS <br><span class="amount"
+            id="nifty_P&L">₹
+            0.00</span></p><img
+          src="id_card.png" alt=""></div>
+      <div class="box"><p>BANKNIFTY PROFIT & LOSS <br><span
+            class="amount" id="bank_P&L">₹ 0.00</span></p><img
+          src="bank.png"
+          alt="bank"></div>
+    </section>
+    <section id="layer-2">
+      <div>
+        <button id="nifty" class="btn nifty swap-button">NIFTY</button>
+        <button id="bank-nifty" class="btn bank-nifty">BANKNIFTY</button></div>
+      <div>
+        <button class="btn" id="new-order">+New Order</button>
+        <img class="exit" src="exit.png" alt="exit">
+      </div>
+    </section>
+    <section id="layer-3">
+      <div class="running-trades"><p>Running Trades</p><button
+          class="btn square-off">Square Off</button>
+      </div>
+      <table class="margin-top table-style">
+        <thead>
+          <tr>
+            <th>S.No.</th>
+            <th>Symbol</th>
+            <th>Side</th>
+            <th>Entry Level</th>
+            <th>Entry Time</th>
+            <th>Entry Price</th>
+            <th>Qty</th>
+            <th>LTP</th>
+            <th>PNL</th>
+          </tr>
+        </thead>
+        <tr class="dataRow-style row1 hidden">
+          <td>1</td>
+          <td>BANKNIFTY22JUNE35100CE</td>
+          <td>BUY</td>
+          <td>35100</td>
+          <td>22-06-07 09:31:18</td>
+          <td>802.95</td>
+          <td>50</td>
+          <td>808.95</td>
+          <td>300.00</td>
+        </tr>
+        <tr class="dataRow-style row2 hidden">
+          <td>2</td>
+          <td>BANKNIFTY22JUNE35100PE</td>
+          <td>SELL</td>
+          <td>35100</td>
+          <td>22-06-07 09:31:18</td>
+          <td>793.875</td>
+          <td>50</td>
+          <td>790.45</td>
+          <td>171.25</td>
+        </tr>
+      </table>
+      <div>
+        <p id="completed-trades" class="margin-top">Completed Trades</p>
+        <div class="entry-heading margin-top">
+          <p>S.No</p>
+          <p>Symbol</p>
+          <p>Side</p>
+          <p>Entry Level</p>
+          <p>Entry Time</p>
+          <p>Entry Piece</p>
+          <p>Qty</p>
+          <p>Exit Time</p>
+          <p>Exit Price</p>
+          <p>Exit Type</p>
+          <p>PNL</p>
+        </div>
+      </div>
+    </section>
+    <div class="modal hidden">
+      <img class="modal_image" src="sign.png" alt="exclamation">
+      <p class="modal_para">Are you sure ?</p>
+      Once square-off, you will not ablee to recover this order.
+      <div class="modal_btn_area">
+        <button class="modal_buttons1 btn">Cancel</button>
+        <button class="modal_buttons2 btn swap-button">Square off
+          Today's</button>
+        <button class="modal_buttons2 btn swap-button">Square off
+          All</button>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
