@@ -1,0 +1,38 @@
+.dataRow-style {
+  font-size: 8px;
+}
+
+th {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.btn {
+  font-size: 12px;
+}
+
+/* modal window  */
+.modal_image {
+  height: 50px;
+  width: 50px;
+}
+
+.modal_para {
+  font-weight: 600;
+  font-size: 18px;
+}
+.modal_para2 {
+  font-size: 12px;
+}
+
+.modal_btn_area {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal_btn_area button {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}

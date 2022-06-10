@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Churnning</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" media="screen and (max-width:810px"
+            href="phone.css">
+        <link rel="stylesheet" media="screen and (max-width:414px"
+            href="phone2.css">
         <link
             href="https://fonts.googleapis.com/css2?family=Acme&family=Macondo&family=Montserrat:ital,wght@0,600;1,400&family=Open+Sans&family=Pacifico&family=Rubik:wght@500&family=Tiro+Kannada:ital@1&display=swap"
             rel="stylesheet">
@@ -77,25 +81,30 @@
             </table>
             <div>
                 <p id="completed-trades" class="margin-top">Completed Trades</p>
-                <div class="entry-heading margin-top">
-                    <p>S.No</p>
-                    <p>Symbol</p>
-                    <p>Side</p>
-                    <p>Entry Level</p>
-                    <p>Entry Time</p>
-                    <p>Entry Piece</p>
-                    <p>Qty</p>
-                    <p>Exit Time</p>
-                    <p>Exit Price</p>
-                    <p>Exit Type</p>
-                    <p>PNL</p>
-                </div>
+                <table class="margin-top table-style">
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Symbol</th>
+                            <th>Side</th>
+                            <th>Entry Level</th>
+                            <th>Entry Time</th>
+                            <th>Entry Piece</th>
+                            <th>Qty</th>
+                            <th>Exit Time</th>
+                            <th>Exit Price</th>
+                            <th>Exit Type</th>
+                            <th>PNL</th>
+                        </tr>
+                    </thead>
+                </table>
             </div>
         </section>
         <div class="modal hidden">
             <img class="modal_image" src="sign.png" alt="exclamation">
             <p class="modal_para">Are you sure ?</p>
-            Once square-off, you will not able to recover this order.
+            <p class="modal_para2"> Once square-off, you will not able to
+                recover this order.</p>
             <div class="modal_btn_area">
                 <button class="modal_buttons1 btn">Cancel</button>
                 <button class="modal_buttons2 btn swap-button">Square off

@@ -98,27 +98,6 @@
   cursor: pointer;
 }
 
-.entry-heading {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  background: rgb(60, 60, 60);
-  color: white;
-  justify-content: space-around;
-  padding: 1vh 0;
-}
-
-/* .info {
-  display: flex;
-  justify-content: space-around;
-  background-color: white;
-  font-size: 12px;
-} */
-
-.info p {
-  width: 10%;
-}
-
 /* classes for js */
 .swap-button {
   background-color: #377dff;
@@ -182,6 +161,7 @@
 table {
   table-layout: fixed;
   width: 100%;
+  word-break: break-all;
 }
 
 th {
